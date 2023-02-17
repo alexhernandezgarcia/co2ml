@@ -49,7 +49,7 @@ Now you should be ready to run the scripts!
 You can run the script that retrieves and prints general statistics from the data with the following Python command:
 
 ```bash
-python explore_data.py --data_csv data/co2ml96models.csv
+python main_stats.py --data_csv data/co2ml96models.csv
 ```
 
 ### Figures
@@ -57,7 +57,6 @@ python explore_data.py --data_csv data/co2ml96models.csv
 The scripts that generate the figures admit arguments that will change the appearance and properties of the plots. These arguments can be passed via the command line or via a YAML configuration file. In order to reproduce the figures from the paper and others, run the following commands that use configuration files contained in the repository:
 
 ```bash
-python figures/gpuhours_task_year.py --input_csv data/co2ml96models.csv --y figures/config/gpuhours_task_year.yml
 python figures/carbonintensity_sources_year.py --input_csv data/co2ml96models.csv --y figures/config/carbonintensity_sources_year.yml
 python figures/co2_performance.py --input_csv data/co2ml96models.csv --y figures/config/co2_performance.yml
 python figures/co2_sources_year.py --input_csv data/co2ml96models.csv --y figures/config/co2_sources_year.yml
