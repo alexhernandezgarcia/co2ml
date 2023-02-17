@@ -213,7 +213,7 @@ def plot_data(df, estimator, args):
         dodge=args.dodge,
         order=sorted(df["Year(s)"].unique()),
         estimator=estimator,
-        ci=args.ci,
+        errorbar=("ci", args.ci),
         seed=args.bs_seed,
         n_boot=args.n_bs,
         join=args.join,

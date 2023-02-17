@@ -215,7 +215,7 @@ def plot_data(df, estimator, args):
         dodge=args.dodge,
         order=sorted(df["Year(s)"].unique()),
         estimator=estimator,
-        ci=args.ci,
+        errorbar=("ci", args.ci),
         seed=args.bs_seed,
         n_boot=args.n_bs,
         join=args.join,
@@ -249,14 +249,14 @@ def plot_data(df, estimator, args):
             markers=dict_markers["Average"],
             dodge=0.5,
             estimator=estimator,
-            ci=args.ci,
+            errorbar=("ci", args.ci),
             seed=args.bs_seed,
             n_boot=args.n_bs,
             join=True,
             errwidth=args.errwidth,
             capsize=args.capsize,
             color="lightgray",
-            alpha=0.25,
+#             alpha=0.25,
         )
     ax.legend(handles=leg_handles, labels=leg_labels)
     if args.logaxis:
