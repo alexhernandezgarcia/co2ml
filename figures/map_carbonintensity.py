@@ -119,7 +119,7 @@ def plot_map(df, args):
     fig, ax = plt.subplots(figsize=(20, 20), dpi=args.dpi)
     divider = make_axes_locatable(ax)
     cax = divider.append_axes("bottom", size="5%", pad=0.02)
-    magma_r = cm.get_cmap("magma_r")
+    magma_r = plt.colormaps["magma_r"]
     df.plot(
         ax=ax,
         cax=cax,

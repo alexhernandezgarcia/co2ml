@@ -256,7 +256,6 @@ def plot_data(df, estimator, args):
             errwidth=args.errwidth,
             capsize=args.capsize,
             color="lightgray",
-            alpha=0.25,
         )
     ax.legend(handles=leg_handles, labels=leg_labels)
     if args.logaxis:
