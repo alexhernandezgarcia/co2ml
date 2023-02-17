@@ -1,0 +1,3 @@
+crop_antarctica: true
+dpi: 100
+output_dir: figures/imgs

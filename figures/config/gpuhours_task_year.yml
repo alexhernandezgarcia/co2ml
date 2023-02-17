@@ -1,0 +1,16 @@
+bs_seed: 2021
+capsize: 0.03
+ci: 99
+conf: 0.99
+dodge: 0.5
+dpi: 100
+errwidth: 1.5
+estimator: trim_mean99
+join: false
+logaxis: true
+n_bs: 10000
+no_stripplot: false
+output_dir: figures/imgs
+plot_grandaverage: true
+stripalpha: 0.5
+stripsize: 3.5

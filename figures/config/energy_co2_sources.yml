@@ -1,0 +1,5 @@
+dpi: 100
+logxaxis: true
+logyaxis: true
+output_dir: figures/imgs
+plot_carbonintensity: true

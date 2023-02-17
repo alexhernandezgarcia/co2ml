@@ -1,0 +1,4 @@
+dpi: 100
+logxaxis: true
+logyaxis: false
+output_dir: figures/imgs
