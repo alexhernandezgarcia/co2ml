@@ -151,6 +151,12 @@ def plot_map(df, args):
     handles = handles + [
         mpatches.Patch(color=palette[el], label=el) for el in hue_order
     ]
+    ax.legend(
+        handles=handles,
+        loc="lower left",
+        title="No. models and main energy source",
+        framealpha=0.5,
+    )
 
     # Antarctica
     if args.crop_antarctica:
