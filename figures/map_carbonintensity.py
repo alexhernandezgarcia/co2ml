@@ -119,7 +119,7 @@ def plot_map(df, args):
     fig, ax = plt.subplots(figsize=(20, 20), dpi=args.dpi)
     divider = make_axes_locatable(ax)
     cax = divider.append_axes("bottom", size="5%", pad=0.02)
-    magma_r = cm.get_cmap("magma_r")
+    magma_r = plt.colormaps["magma_r"]
     df.plot(
         ax=ax,
         cax=cax,
@@ -151,6 +151,12 @@ def plot_map(df, args):
     handles = handles + [
         mpatches.Patch(color=palette[el], label=el) for el in hue_order
     ]
+    ax.legend(
+        handles=handles,
+        loc="lower left",
+        title="No. models and main energy source",
+        framealpha=0.5,
+    )
 
     # Antarctica
     if args.crop_antarctica:
