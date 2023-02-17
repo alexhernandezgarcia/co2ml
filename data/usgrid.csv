@@ -1,0 +1,13 @@
+Energy source,Percentage,location
+Coal,23,NWPP
+Coal,12.30,RFCE
+Oil,0.20,NWPP
+Oil,0.10,RFCE
+Gas,19.90,NWPP
+Gas,45.70,RFCE
+Nuclear,3.10,NWPP
+Nuclear,36.90,RFCE
+Hydro,42.30,NWPP
+Hydro,1.60,RFCE
+Other,12,NWPP
+Other,3.40,RFCE
