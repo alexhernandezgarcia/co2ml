@@ -39,7 +39,7 @@ python -m pip install numpy pandas matplotlib seaborn pyyaml scipy
 OR via the requirements file:
 
 ```bash
-python -m pip install -r requirements
+python -m pip install -r requirements.txt
 ```
 
 Now you should be ready to run the scripts!
