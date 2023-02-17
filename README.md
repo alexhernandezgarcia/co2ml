@@ -8,7 +8,7 @@ Machine learning (ML) requires using energy to carry out computations during the
 
 ## Data
 
-The main data of the paper is in contained in the CSV file [data/co2ml96models.csv](./data/co2ml96models.csv). Each row in the file contains information about one machine learning model, such as the carbon intensity of the main energy source, the training time, number of GPUs/TPUs, the estimated carbon emissions associated to training it, the performance metrics, etc. We have removed all information that would allow to directly identify the paper from the data base and we have also added a small amount of noise to some of variables, such as performance metrics.
+The main data of the paper is in contained in the CSV file [data/co2ml95models.csv](./data/co2ml95models.csv). Each row in the file contains information about one machine learning model, such as the carbon intensity of the main energy source, the training time, number of GPUs/TPUs, the estimated carbon emissions associated to training it, the performance metrics, etc. We have removed all information that would allow to directly identify the paper from the data base and we have also added a small amount of noise to some of variables, such as performance metrics.
 
 ## How to run the code
 
@@ -49,7 +49,7 @@ Now you should be ready to run the scripts!
 You can run the script that retrieves and prints general statistics from the data with the following Python command:
 
 ```bash
-python main_stats.py --data_csv data/co2ml96models.csv
+python main_stats.py --data_csv data/co2ml95models.csv
 ```
 
 ### Figures
@@ -57,18 +57,18 @@ python main_stats.py --data_csv data/co2ml96models.csv
 The scripts that generate the figures admit arguments that will change the appearance and properties of the plots. These arguments can be passed via the command line or via a YAML configuration file. In order to reproduce the figures from the paper and others, run the following commands that use configuration files contained in the repository:
 
 ```bash
-python figures/carbonintensity_sources_year.py --input_csv data/co2ml96models.csv --y figures/config/carbonintensity_sources_year.yml
-python figures/co2_performance.py --input_csv data/co2ml96models.csv --y figures/config/co2_performance.yml
-python figures/co2_sources_year.py --input_csv data/co2ml96models.csv --y figures/config/co2_sources_year.yml
-python figures/co2_task_year.py --input_csv data/co2ml96models.csv --y figures/config/co2_task_year.yml
-python figures/energy_carbonintensity_sources.py --input_csv data/co2ml96models.csv --y figures/config/energy_carbonintensity_sources.yml
-python figures/energy_co2_sources.py --input_csv data/co2ml96models.csv --y figures/config/energy_co2_sources.yml
-python figures/energy_performance.py --input_csv data/co2ml96models.csv --y figures/config/energy_performance.yml
-python figures/energy_task_year.py --input_csv data/co2ml96models.csv --y figures/config/energy_task_year.yml
-python figures/gpuhours_task_year.py --input_csv data/co2ml96models.csv --y figures/config/gpuhours_task_year.yml
-python figures/map_carbonintensity.py --input_csv data/co2ml96models.csv --y figures/config/map_carbonintensity.yml
-python figures/map_count_countries.py --input_csv data/co2ml96models.csv --y figures/config/map_count_countries.yml
-python figures/sources_count_year.py --input_csv data/co2ml96models.csv --y figures/config/sources_count_year.yml
+python figures/carbonintensity_sources_year.py --input_csv data/co2ml95models.csv --y figures/config/carbonintensity_sources_year.yml
+python figures/co2_performance.py --input_csv data/co2ml95models.csv --y figures/config/co2_performance.yml
+python figures/co2_sources_year.py --input_csv data/co2ml95models.csv --y figures/config/co2_sources_year.yml
+python figures/co2_task_year.py --input_csv data/co2ml95models.csv --y figures/config/co2_task_year.yml
+python figures/energy_carbonintensity_sources.py --input_csv data/co2ml95models.csv --y figures/config/energy_carbonintensity_sources.yml
+python figures/energy_co2_sources.py --input_csv data/co2ml95models.csv --y figures/config/energy_co2_sources.yml
+python figures/energy_performance.py --input_csv data/co2ml95models.csv --y figures/config/energy_performance.yml
+python figures/energy_task_year.py --input_csv data/co2ml95models.csv --y figures/config/energy_task_year.yml
+python figures/gpuhours_task_year.py --input_csv data/co2ml95models.csv --y figures/config/gpuhours_task_year.yml
+python figures/map_carbonintensity.py --input_csv data/co2ml95models.csv --y figures/config/map_carbonintensity.yml
+python figures/map_count_countries.py --input_csv data/co2ml95models.csv --y figures/config/map_count_countries.yml
+python figures/sources_count_year.py --input_csv data/co2ml95models.csv --y figures/config/sources_count_year.yml
 python figures/us_grid.py --input_csv data/usgrid.csv --y figures/config/us_grid.yml
 ```
 
