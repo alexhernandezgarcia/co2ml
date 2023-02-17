@@ -33,7 +33,7 @@ source env-co2ml/bin/activate
 Install the Python dependencies explicitly:
 
 ```bash
-python -m pip install numpy pandas matplotlib seaborn pyyaml scipy
+python -m pip install numpy pandas geopandas matplotlib seaborn pyyaml scipy
 ```
 
 OR via the requirements file:
